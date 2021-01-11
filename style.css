@@ -10,6 +10,18 @@ h2{
     color: green;
 }
 
+td:only-child{
+    color: purple;
+}
+
+#google-link:link{ /* univisited */
+    color: green;
+}
+
+#google-link:visited{ /* visited */
+    color: red;
+}
+
 :root{
     background-color: #fcf8ec;
 }

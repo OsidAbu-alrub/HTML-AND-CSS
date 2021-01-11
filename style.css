@@ -25,3 +25,22 @@ td:only-child{
 :root{
     background-color: #fcf8ec;
 }
+
+h2 + a{ /* every anchor tag that follows an h2*/
+    color: blue;
+}
+
+textarea ~ button { /*Every textarea thats followed by a button and they both share same parents (so siblings)*/
+    /*CHANGES ARE APPLIED ON BUTTON IN THIS CASE*/
+    color: aqua;
+    width: 10em;
+}
+
+
+ul > li{ /*Every single child of a ul (child selector, must be a direct child)*/
+    color: pink;
+}
+
+ul li { /*Every single li that is a decendent of ul (so doens't have to be a direct child, which means ul can be grand parent etc etc)*/
+    color:brown;
+}

@@ -1,9 +1,13 @@
-.title{
+h1{
+    color: #456268;
+}
+
+h2{
     color: #456268;
 }
 
 #contact-us{
-    color:#456268;
+    color: green;
 }
 
 :root{

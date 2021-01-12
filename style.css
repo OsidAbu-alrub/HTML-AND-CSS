@@ -1,3 +1,15 @@
 body{
-    background: url("https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png") no-repeat;
+    background: url("https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png");
+    background-size: contain;
+}
+
+.image-test{
+    height: 700px;
+    width: 99.5%;
+    background: url("https://loadedlandscapes.com/wp-content/uploads/2019/07/lighting.jpg");
+    /* background-size: cover;  FILLS CONTAINER*/
+    /* background-size: contain; FILLS CONTAINER BUT WITHOUT MESSING UP RATIO*/
+    background-repeat:  repeat;
+    background-color: steelblue;
+    border: solid;
 }

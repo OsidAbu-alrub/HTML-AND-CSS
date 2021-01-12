@@ -44,3 +44,16 @@ ul > li{ /*Every single child of a ul (child selector, must be a direct child)*/
 ul li { /*Every single li that is a decendent of ul (so doens't have to be a direct child, which means ul can be grand parent etc etc)*/
     color:brown;
 }
+
+
+.subtitle{
+    border: solid blue;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    padding: 10px;
+    text-align: center;
+}
+
+h2[class=subtitle]{ /*EVERY H2 THAT HAS A CLASS ATTRIBUTE WITH VALUE OF SUBTITLE*/
+    color: yellow;
+}

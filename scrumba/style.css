@@ -1,0 +1,20 @@
+body{
+    background: rgb(230,230,230);
+}
+
+header{
+    border: solid black;
+    background-color: purple;
+    height: 100px;
+    color: whitesmoke;
+    padding: 5px 0px 0px 30px;
+    font-size: 32px;
+    margin: 20px;
+}
+
+section{
+    background: white;
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid;
+}

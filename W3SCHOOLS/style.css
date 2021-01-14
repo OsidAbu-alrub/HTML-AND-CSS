@@ -1,0 +1,19 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.page-header{
+    box-sizing: border-box;
+    /* height: 150px; */
+    vertical-align: text-bottom;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: 2px solid black;
+    /* padding: 30px; */
+}
+
+.page-header h1{
+    text-align: center;
+    border: 2px solid;
+}

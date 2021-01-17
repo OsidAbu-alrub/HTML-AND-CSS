@@ -15,29 +15,33 @@
 
     </header>
     <main>
-        <div class="parent">
-            <section id="pizza-container">
-                <form method="POST" action="#">
-                    <div>
-                        <label for="address-one">Address One</label>
-                    </div>
-                    <div>
-                        <input type="text" name="address-one" placeholder="e.g. Groove Street" value="">
-                    </div>
+        <section class="checkbox-test">
+            <form action="#" method="GET">
+                <h3>Ingrediantes</h3>
+                <div style="margin-bottom: 20px;">
+                    <input type="checkbox" value="pep" name="ing1">
+                    <label for="ing1" style="border-right: solid; padding-right: 5px;">Pepo</label>
+                    
+                    <input type="checkbox" value="cheese" name="ing2">
+                    <label style="border-right: solid; padding-right: 5px;" for="ing2">Cheese</label>
 
-                    <div>
-                        <label for="email">Email</label>
-                    </div>
-                    <div>
-                        <input type="text" name="email" placeholder="e.g. example@gmail.com" value="">
-                    </div>
+                    <input type="checkbox" value="tomato" name="ing3">
+                    <label  for="ing3">Tomato</label>
+                </div>
 
-                    <div>
-                        <button type="submit">Order</button>
-                    </div>
-                </form>
-            </section>
-        </div>
+                <div style="border: solid;">
+                    <select name="size" style="object-fit: cover;">
+                        <option value="Large">Large</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Small">Small</option>
+                    </select>
+                </div>
+
+                <div>
+                    
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
 

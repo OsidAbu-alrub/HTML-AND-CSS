@@ -1,41 +1,218 @@
-.container{
-    border: 5px solid orange;
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+/* HEADER */
+#header-container{
+    padding: 1% 2%;
+    background-color: #eee;
     display: flex;
+    width: auto;
+    height:auto;
+    border-bottom: 2px solid #ccc;
     justify-content: center;
+    box-shadow: 2px 5px 8px #ddd;
 }
 
-.container > div {
-    padding: 10px;
-    flex: 1;
+#title{
     text-align: center;
-    font-size: 2em;
-    color: #ffeead;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Potta One',sans-serif;
+    font-size: 2.5em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    max-width: 340px;
 }
-  
-  html, body {
-    background-color: #ffeead;
-    margin: 10px;
-  }
-  
-  .container > div:nth-child(1) {
-    background-color: #96ceb4;	
-  }
-  
-  .container > div:nth-child(2) {
-    background-color: #ff6f69;
-  }
-  
-  .container > div:nth-child(3) {
-    background-color: #88d8b0;
-  }
-  
 
-  /*MEDIA QUERY (VERY COOL)*/
-  @media all and (max-width:600px){
-      .container{
+#nav-bar{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: space-around;
+}
+
+.nav-item{
+    display: inline-block;
+    text-align: center;
+    max-width: 200px;
+    flex: 1;
+}
+
+.nav-link:hover{
+    text-shadow: 3px 5px 8px rgba(100, 100, 100, 1);
+    color: black;
+    border-bottom: 3px solid black;
+    transition: color 1s,border-bottom 1s, text-shadow 1s;
+}
+.nav-link{
+    color: #aaa;
+    text-shadow: 3px 5px 8px rgba(150, 150, 150, 0.3);
+    text-decoration: none;
+    font-size: 2em;
+    border-bottom: 3px solid transparent;
+    transition: color 1s, border-bottom 1s,text-shadow 1s;
+}
+
+/*BODY*/
+body,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-container{
+    background-color: #ffe;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 50%;
+    height: auto;
+    box-shadow: 3px 7px 20px #999;
+}
+
+.holder {
+    margin: 100px 10%;
+    margin-bottom: 40px;
+    padding: 0px;
+    border-top: 2px solid #aaa;
+    display: inline-block;
+    position: relative;
+} 
+.mask {
+    margin: 0px;
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    width:50%;
+    height: 4px;
+    background-color:#ffe;
+}
+
+#sec-one-title{
+    color: #555;
+    margin: 0px;
+    display: inline-block;
+    font-size: 4em;
+}
+
+#sec-one-parag{
+    font-size: 1.2em;
+    width: 40%;
+    margin-left: 10%;
+    color: #777;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+
+.cstm-btn{
+    background-color: transparent;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    width: 20%;
+    border: 2px solid #bbb;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.cstm-btn:hover{
+    cursor: pointer;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.cstm-btn:hover #learn-more-btn{
+    color: #ffe;
+    transition: color 0.3s;
+}
+
+#learn-more-btn{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #555;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#right-img{
+    position: relative;
+    float: right;
+    display: block;
+    width: 50%;
+    top: -400px;
+    margin-right: 10%;
+    box-shadow: 3px 7px 20px #000;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+@media all and (max-width:1050px){
+    #right-img{
+        display: none;
+    }
+
+    #header-container{
+        width: auto;
         flex-wrap: wrap;
-      }
-      .container > div{
-          flex: 1 1 100%
-      }
-  }
+        flex: 1 1 100%;
+    }
+
+    #nav-bar{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .nav-item{
+        margin-top: 20px;
+        flex: 1 1 100%;
+    }
+
+    #main-container{
+        width: auto;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    #sec-one-parag{
+        width: auto;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    .cstm-btn{
+        width: 40%;
+        position: relative;
+        display: block;
+        margin-left: auto;   
+        margin-right: auto;
+        bottom: 50px;   
+    }
+
+    #learn-more-btn{
+        font-size: calc(16px + .5vw);
+    }
+}
+
+
+@media all and (max-width:335px){
+    #title{
+        text-align: center;
+        font-size: 10vw;
+        margin: auto;
+    }
+    .nav-link{
+        font-size: 9vw;
+    }
+}

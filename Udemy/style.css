@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-container{
+    background-color: #eee;
+    display: flex;
+    width: 100%;
+    height:auto;
+    border-bottom: 2px solid;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+#title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Potta One',sans-serif;
+    font-size: 2.5em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    max-width: 340px;
+}
+
+#nav-bar{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    display: inline-block;
+    text-align: center;
+    max-width: 200px;
+    flex: 1;
+}
+
+.nav-link:hover{
+    color: black;
+    border-bottom: 3px solid black;
+    transition: color 1s,border-bottom 1s;
+}
+.nav-link{
+    color: #aaa;
+    text-decoration: none;
+    font-size: 2em;
+    border-bottom: 3px solid transparent;
+    transition: color 1s, border-bottom 1s;
+}
+
+@media all and (max-width:1000px){
+    #header-container{
+        width: 100%;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+    }
+
+    #nav-bar{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .nav-item{
+        margin-top: 20px;
+        flex: 1 1 100%;
+    }
+}
+
+
+@media all and (max-width:335px){
+    #title{
+        text-align: center;
+        font-size: 10vw;
+        margin: auto;
+    }
+
+    .nav-link{
+        font-size: 9vw;
+    }
+}

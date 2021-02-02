@@ -1,3 +1,7 @@
+:root{
+    --cool-grey: rgba(0, 0, 0, 0.3);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -8,76 +12,187 @@ body,html{
     height: 100%;
 }
 
-/*HEADER*/
-.title-container{
-    background-color: tomato;
-    width: 99%;
+.wrapper{
+    width: 45%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     margin: auto;
-    height: 10%;
+    padding: 10px 20px;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TOP SECTION */
+.top-sec{
+    padding: 10px 0px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
+    align-items:center;
 }
 
-.title{
-    font-family: cursive;
-    font-size: 3em;
-    margin: 0%;
-}
-
-/*MAIN*/
-.main-container{
-    margin: auto;
-    width: 99%;
-    height: 90%;
+.top-sec-title{
+    font-weight: 500;
+    color: rgb(30,30,30);
     padding: 0px;
-}
-
-.top-half-container{
-    display: flex;
-    background-color: green;
-    height: 60%;
+    padding-left: 20px;
     margin: 0%;
+    font-size: 1em;
 }
 
-.top-left
-{
-    flex-grow: 1;
-    background-color: blue;
-}
 
-.center{
-    flex-grow: 2;
-    background-color: yellow;
-}
-
-.top-right
-{
-    flex-grow: 1;
-    background-color: purple;
-}
-
-/*BOTTOM HALF*/
-.bottom-half-container{
+.exit{
+    cursor: pointer;
+    align-self:flex-start;
     display: flex;
-    background-color: cyan;
-    height: 40%;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cool-grey);
+
+}
+
+.exit-circle{
+    font-size: 2.1em;
+}
+
+.exit-para{
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 0px;
     margin: 0px;
 }
 
-.bottom-left{
-    flex-grow: 1;
-    background-color: brown;
-}
-
-.nav-menu{
-    flex-grow: 3;
-    background-color: deeppink;
+/* SEARCH FIELD SECTION */
+.search-field-section{
+    align-items: center;
+    padding: 5px 0px;
     display: flex;
-    flex-direction: column;
+    border-bottom: 0.5px solid var(--cool-grey);
+    width: 80%;
+    margin: auto;
+    color: var(--cool-grey);
 }
 
-.nav-item{
-    border: solid;
-    flex-grow: 1;
+.search-icon{
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.search-field{
+    flex: 1;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+/* LIST SECTION */
+.list-section{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.list{
+    height: 450px;
+    list-style: none;
+    padding: 0px;
+}
+
+.list-item{
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 0.5px solid var(--cool-grey);
+    margin-bottom: 5px;
+    transition: box-shadow 0.5s;
+}
+
+.list-item:hover{
+    box-shadow: 0px 10px 20px var(--cool-grey);
+}
+
+.name{
+    margin-left: 5px;
+}
+
+.check-mark-wrapper{
+    border: 2px solid;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
+
+.check-mark-show{
+    visibility: visible;
+}
+.check-mark-wrapper-show{
+    color: #94b76c;
+}
+
+.check-mark-wrapper-hide{
+    color: black;
+}
+
+.check-mark-hide{
+    visibility: hidden;
+}
+
+.selected{
+    opacity: 1.0;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.not-selected{
+    opacity: 0.4;
+}
+
+/* BOTTOM SECTION */
+.bottom-section{
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    cursor: pointer;
+    margin-right: 10px;
+    flex: 1;
+    font-size: 1.1em;
+    max-width: 150px;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right,#57bcfa,#504aff);
+    transition: box-shadow 1s;
+}
+
+.btn:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* CLICKABLE BUTTON */
+.clickable{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* FOR DISABLED BUTTON */
+.disabled{
+    cursor: default;
+    opacity: 0.7;
+    background-image: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.disabled:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0);
 }
